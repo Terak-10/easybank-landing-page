@@ -1,6 +1,5 @@
 @media (max-width: 1200px) {
-    .header-box,
-    .content {
+    .header-box {
         margin: 0 3rem;
     }
 
@@ -82,6 +81,32 @@
     .text-box {
         &_h-1 {
             color: var(--White);
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    
+    .btn-display {
+        display: none;
+    }
+
+    .text-box {
+        text-align: center;
+        &_h-1 {
+            font-size:  clamp(1.8rem, 2vw, 3rem);
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+    
+        &_p {
+            font-size: clamp(0.6rem, 2vw, 1.05rem);
+            line-height: 1.5;
+            color: var(--Grayish-Blue);
+            margin-bottom: 2rem;
         }
     }
 }

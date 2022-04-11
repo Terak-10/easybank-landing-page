@@ -54,12 +54,13 @@
         top: 0;
         left: 0;
         transform: translate(33%, -13%);
-        width: 45vw;
+        width: 35vw;
     }
 }
 
 ///********** CONTENT  **********///
 .content {
+    padding: 3rem;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
