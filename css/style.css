@@ -19,6 +19,10 @@ html {
   font-family: 'Public Sans', sans-serif;
   font-size: 18px; }
 
+.nav-bar_burger {
+  display: none;
+  height: 1rem; }
+
 .nav-bar_logo {
   width: 10rem;
   height: 1.5rem; }
@@ -34,20 +38,70 @@ html {
   color: var(--Grayish-Blue);
   font-size: 15px; }
 
-.nav-bar_btn {
-  padding: 0.9rem 2.2rem;
-  border-radius: 100px;
-  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
-  color: var(--White);
-  font-weight: 700;
-  border: none; }
+.text-box {
+  width: 40%;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .text-box_h-1 {
+    font-size: clamp(2.5rem, 4.5vw, 3rem);
+    font-weight: 400;
+    line-height: 1; }
+  .text-box_p {
+    font-size: clamp(0.7rem, 2vw, 1.05rem);
+    line-height: 1.5;
+    color: var(--Grayish-Blue); }
+  .text-box_btn {
+    align-self: flex-start; }
+
+.header-box_img {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(33%, -13%);
+  width: 45vw; }
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  .content_text-box {
+    width: 55%;
+    margin-bottom: 4rem; }
+  .content_h-2 {
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  .content_p {
+    font-weight: 300;
+    color: var(--Grayish-Blue); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem 1rem; }
+  .grid_box {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    row-gap: 1rem; }
+  .grid_img {
+    grid-row: 1 / 2; }
+  .grid_h-3 {
+    grid-row: 2 / 3;
+    font-weight: 400; }
+  .grid_p {
+    grid-row: 3 / 4;
+    font-weight: 300;
+    color: var(--Grayish-Blue);
+    font-size: 1rem; }
 
 .container {
-  background-color: red;
   min-height: 100vh; }
 
 .nav {
-  background-color: blue; }
+  background-color: var(--White); }
 
 .nav-bar {
   display: flex;
@@ -57,3 +111,98 @@ html {
   background-color: var(--White);
   max-width: 1200px;
   margin: 0 auto; }
+
+.header {
+  min-height: calc(70vh - 4rem);
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--Very-Light-Gray);
+  position: relative;
+  overflow: hidden; }
+  .header_bg-desktop {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transform: translate(37%, -26.5%); }
+
+.header-box {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(70vh - 4rem);
+  position: relative;
+  z-index: 1; }
+
+.main {
+  min-height: 60vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--Light-Grayish-Blue); }
+
+@media (max-width: 1200px) {
+  .header-box,
+  .content {
+    margin: 0 3rem; }
+  .content {
+    padding-top: 3rem; } }
+
+@media (max-width: 947px) {
+  .span {
+    color: var(--White); } }
+
+@media (max-width: 895px) {
+  .span {
+    color: #000; }
+  .header,
+  .header-box {
+    min-height: 50vh; }
+  .header-box {
+    flex-direction: column-reverse; }
+    .header-box_img {
+      position: relative;
+      top: 10px;
+      left: -100px;
+      transform: translate(1, 1);
+      width: 50vw; }
+  .text-box {
+    width: 100%;
+    min-height: 25vh;
+    margin-bottom: 3rem; }
+    .text-box_h-1 {
+      font-size: clamp(2.5rem, 4.5vw, 3rem);
+      font-weight: 400;
+      line-height: 1; }
+    .text-box_p {
+      font-size: clamp(0.7rem, 2vw, 1.05rem);
+      line-height: 1.5;
+      color: var(--Grayish-Blue); }
+    .text-box_btn {
+      align-self: center; } }
+
+@media (max-width: 700px) {
+  .nav-bar_ul {
+    display: none; }
+  .nav-bar_burger {
+    display: inline-block; }
+  .content_text-box {
+    width: 100%; } }
+
+@media (max-width: 600px) {
+  .span {
+    color: var(--White); }
+  .text-box_h-1 {
+    color: var(--White); } }
+
+.btn {
+  padding: 0.9rem 2.2rem;
+  border-radius: 100px;
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  color: var(--White);
+  font-weight: 700;
+  border: none; }
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 60%; }

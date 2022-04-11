@@ -1,4 +1,9 @@
+///********** NAV - BAR  **********///
 .nav-bar {
+    &_burger {
+        display: none;
+        height: 1rem;
+    }
     &_logo {
         width: 10rem;
         height: 1.5rem;
@@ -17,13 +22,91 @@
         color: var(--Grayish-Blue);
         font-size: 15px;
     }
+}
+///********** HEADER  **********///
+.text-box {
+    width: 40%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_h-1 {
+        font-size:  clamp(2.5rem, 4.5vw, 3rem);
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    &_p {
+        font-size: clamp(0.7rem, 2vw, 1.05rem);
+        line-height: 1.5;
+        color: var(--Grayish-Blue)
+    }
 
     &_btn {
-        padding: 0.9rem 2.2rem;
-        border-radius: 100px;
-        background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
-        color: var(--White);
-        font-weight: 700;
-        border: none;
+        align-self: flex-start;
+    }
+}
+
+.header-box {
+    &_img {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(33%, -13%);
+        width: 45vw;
+    }
+}
+
+///********** CONTENT  **********///
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+
+    &_text-box {
+        width: 55%;
+        margin-bottom: 4rem;
+    }
+
+    &_h-2 {
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    &_p {
+        font-weight: 300;
+        color: var(--Grayish-Blue);
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem 1rem;
+
+    &_box {
+        display: grid;
+        grid-template-columns: minmax(min-content, max-content);
+        grid-template-rows: repeat(3, minmax(min-content, max-content));
+        row-gap: 1rem;
+    }
+
+    &_img {
+        grid-row: 1 / 2;
+    }
+
+    &_h-3  {
+        grid-row: 2 / 3;
+        font-weight: 400;
+    }
+
+    &_p {
+        grid-row: 3 / 4;
+        font-weight: 300;
+        color: var(--Grayish-Blue);
+        font-size: 1rem;
     }
 }

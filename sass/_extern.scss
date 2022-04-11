@@ -1,0 +1,13 @@
+.btn {
+    padding: 0.9rem 2.2rem;
+    border-radius: 100px;
+    background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    color: var(--White);
+    font-weight: 700;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
