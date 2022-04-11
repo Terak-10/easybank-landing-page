@@ -1,0 +1,29 @@
+.nav-bar {
+    &_logo {
+        width: 10rem;
+        height: 1.5rem;
+    }
+
+    &_ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+
+    &_link:link,
+    &_link:visited {
+        text-decoration: none;
+        color: var(--Grayish-Blue);
+        font-size: 15px;
+    }
+
+    &_btn {
+        padding: 0.9rem 2.2rem;
+        border-radius: 100px;
+        background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+        color: var(--White);
+        font-weight: 700;
+        border: none;
+    }
+}
