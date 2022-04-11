@@ -26,11 +26,12 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size: 18px
+- Font size: 18px 
 
 ### Font
 
 - Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+- font-family: 'Public Sans', sans-serif;
 - Weights: 300, 400, 700
 
 //////////
