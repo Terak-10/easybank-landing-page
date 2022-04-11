@@ -17,7 +17,7 @@
 }
 
 .header {
-    min-height: calc(40vh - 4rem);
+    min-height: calc(75vh - 4rem);
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--Very-Light-Gray); 
@@ -38,7 +38,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: calc(40vh - 4rem);
+    min-height: calc(75vh - 4rem);
     position: relative;
     z-index: 1;
 }
@@ -48,5 +48,13 @@
     max-width: 1440px;
     margin: 0 auto;
     background-color: var(--Light-Grayish-Blue);
+}
+
+.article {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--Very-Light-Gray);
+    min-height: 40vh;
+    padding-top: 3rem;
 }
 

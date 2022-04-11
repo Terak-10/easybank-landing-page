@@ -45,7 +45,7 @@ html {
   flex-direction: column;
   justify-content: space-between; }
   .text-box_h-1 {
-    font-size: clamp(2.5rem, 4.5vw, 3rem);
+    font-size: clamp(2rem, 4.5vw, 3rem);
     font-weight: 400;
     line-height: 1; }
   .text-box_p {
@@ -63,7 +63,7 @@ html {
   width: 35vw; }
 
 .content {
-  padding: 3rem;
+  padding-top: 3rem;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -98,6 +98,51 @@ html {
     color: var(--Grayish-Blue);
     font-size: 1rem; }
 
+.article-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 5rem; }
+  .article-box_h-3 {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 2.3rem; }
+  .article-box_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    border-radius: 5%; }
+  .article-box_item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--White);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; }
+  .article-box_img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%; }
+  .article-box_text-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 1.5rem; }
+  .article-box_p {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    color: var(--Grayish-Blue);
+    font-size: 0.8rem; }
+  .article-box_h-4 {
+    margin-bottom: 1rem;
+    font-weight: 300; }
+  .article-box_p-2 {
+    font-weight: 300;
+    color: var(--Grayish-Blue);
+    font-size: 0.8rem; }
+
 .container {
   min-height: 100vh; }
 
@@ -114,7 +159,7 @@ html {
   margin: 0 auto; }
 
 .header {
-  min-height: calc(40vh - 4rem);
+  min-height: calc(75vh - 4rem);
   max-width: 1440px;
   margin: 0 auto;
   background-color: var(--Very-Light-Gray);
@@ -132,7 +177,7 @@ html {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: calc(40vh - 4rem);
+  min-height: calc(75vh - 4rem);
   position: relative;
   z-index: 1; }
 
@@ -142,11 +187,19 @@ html {
   margin: 0 auto;
   background-color: var(--Light-Grayish-Blue); }
 
+.article {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--Very-Light-Gray);
+  min-height: 40vh;
+  padding-top: 3rem; }
+
 @media (max-width: 1200px) {
-  .header-box {
-    margin: 0 3rem; }
+  .header-box,
+  .article {
+    padding: 0 3rem; }
   .content {
-    padding-top: 3rem; } }
+    padding: 3rem; } }
 
 @media (max-width: 947px) {
   .span {

@@ -1,10 +1,11 @@
 @media (max-width: 1200px) {
-    .header-box {
-        margin: 0 3rem;
+    .header-box,
+    .article {
+        padding: 0 3rem;
     }
 
     .content {
-        padding-top: 3rem;
+            padding: 3rem;
     }
 }
 
