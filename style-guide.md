@@ -22,12 +22,6 @@ The designs were created to the following widths:
 - Very Light Gray: hsl(0, 0%, 98%)
 - White: hsl(0, 0%, 100%)
 
-## Typography
-
-### Body Copy
-
-- Font size: 18px 
-
 ### Font
 
 - Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
