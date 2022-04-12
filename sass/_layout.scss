@@ -58,3 +58,16 @@
     padding-top: 3rem;
 }
 
+.footer {
+    max-width: 1440px;
+    min-height: 12rem;
+    background-color: var(--Dark-Blue);
+    margin: 0 auto;
+}
+
+.footer-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 12rem;
+    background-color: red;
+}

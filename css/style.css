@@ -61,9 +61,14 @@ html {
   left: 0;
   transform: translate(33%, -13%);
   width: 35vw; }
+  @media screen and (max-width: 35em) {
+    .header-box_img {
+      position: unset;
+      align-self: center;
+      transform: translate(100px, -60px);
+      width: 100%; } }
 
 .content {
-  padding-top: 3rem;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -106,15 +111,22 @@ html {
     margin-bottom: 2rem;
     font-weight: 300;
     font-size: 2.3rem; }
+    @media screen and (max-width: 58.0625em) {
+      .article-box_h-3 {
+        text-align: center; } }
   .article-box_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     border-radius: 5%; }
+    @media screen and (max-width: 58.0625em) {
+      .article-box_grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 260px));
+        place-content: center; } }
   .article-box_item {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
     background-color: var(--White);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px; }
@@ -134,14 +146,15 @@ html {
     margin-bottom: 0.5rem;
     font-weight: 300;
     color: var(--Grayish-Blue);
-    font-size: 0.8rem; }
+    font-size: clamp(0.6rem, 7vw, 0.8rem); }
   .article-box_h-4 {
     margin-bottom: 1rem;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw, 1.05rem); }
   .article-box_p-2 {
     font-weight: 300;
     color: var(--Grayish-Blue);
-    font-size: 0.8rem; }
+    font-size: clamp(0.2rem, 5vw, 0.85rem); }
 
 .container {
   min-height: 100vh; }
@@ -194,11 +207,24 @@ html {
   min-height: 40vh;
   padding-top: 3rem; }
 
+.footer {
+  max-width: 1440px;
+  min-height: 12rem;
+  background-color: var(--Dark-Blue);
+  margin: 0 auto; }
+
+.footer-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 12rem;
+  background-color: red; }
+
 @media (max-width: 1200px) {
-  .header-box,
-  .article {
+  .header-box {
     padding: 0 3rem; }
-  .content {
+  .content,
+  .article,
+  .footer-box {
     padding: 3rem; } }
 
 @media (max-width: 947px) {

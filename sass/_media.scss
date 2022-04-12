@@ -1,10 +1,11 @@
 @media (max-width: 1200px) {
-    .header-box,
-    .article {
+    .header-box {
         padding: 0 3rem;
     }
 
-    .content {
+    .content,
+    .article,
+    .footer-box {
             padding: 3rem;
     }
 }
@@ -73,7 +74,6 @@
    }
 }
 
-
 @media (max-width: 600px) {
 
     .span {
@@ -86,10 +86,7 @@
     }
 }
 
-
 @media (max-width: 450px) {
-
-    
     .btn-display {
         display: none;
     }
