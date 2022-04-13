@@ -192,14 +192,92 @@
 }
 
 .footer-box {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 2fr;
+    column-gap: 1rem;
 
+    @media screen and (max-width: 53.125em) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 2rem;
+    }
 }
  
 
+.box-1 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 
+    @media screen and (max-width: 53.125em) {
+            justify-content: center;
+    }
 
+    &_logo {
 
+    }
 
-///////////////////////////////////  Dokončiť + footer + projekt
-/////////////////////////////////// prepísať všetky px na em
+    &_icon-box {
+        align-self: flex-end;
+
+        
+    }
+
+    &_item {
+        margin-right: 0.5rem;
+    }
+}
+
+.box-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    
+    &_ul-1,
+    &_ul-2 {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-weight: 300;
+        padding-left: 2rem;
+
+        @media screen and (max-width: 53.125em) {
+            align-items: center;
+            padding-left: 0;
+    }
+    }
+
+    
+
+    &_link:link,
+    &_link:visited {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.663);
+        font-size: clamp(0.7rem, 0.8vw, 1.2rem);
+    }
+}
+
+.box-3 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media screen and (max-width: 53.125em) {
+        justify-content: center;
+}
+
+    &_btn {
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+    &_p {
+        padding-bottom: 0.5rem;
+        color: var(--Grayish-Blue);
+        font-size: clamp(0.7rem, 1vw, 1.2rem);
+    }
+}
+
+///////////////////////////////////  Dokončiť + projekt
 /////////////////////////////////// active states
