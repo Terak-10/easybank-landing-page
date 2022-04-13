@@ -43,12 +43,48 @@
         font-size:  clamp(2rem, 4.5vw, 3rem);
         font-weight: 400;
         line-height: 1;
+        animation-name: pulsate;
+        animation-duration: 3s;
+    }
+
+    @keyframes pulsate  {
+        0% {
+            transform: translate(-100px);
+            opacity: 0;
+        }
+
+        80% {
+
+        }
+
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
     }
 
     &_p {
         font-size: clamp(0.7rem, 2vw, 1.05rem);
         line-height: 1.5;
-        color: var(--Grayish-Blue)
+        color: var(--Grayish-Blue);
+        animation-name: pulsate2;
+        animation-duration: 5s;
+    }
+
+    @keyframes pulsate2 {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        80% {
+
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     &_btn {
@@ -224,10 +260,6 @@
 
     @media screen and (max-width: 53.125em) {
             justify-content: center;
-    }
-
-    &_logo {
-
     }
 
     &_icon-box {
