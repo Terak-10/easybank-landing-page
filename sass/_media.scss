@@ -16,11 +16,11 @@
     }
 }
 //// TABLET VERSION ////
-@media (max-width: 55.9375em) {                              
+@media (max-width: 55.9375em) {  
+    
     .span {
         color: #000;
     }
-
     .header,
     .header-box {
         min-height: 50vh;
@@ -45,11 +45,12 @@
             font-size:  clamp(2.5rem, 4.5vw, 3rem);
             font-weight: 400;
             line-height: 1;
+            color: var(#fff);
         }
         &_p {
             font-size: clamp(0.7rem, 2vw, 1.05rem);
             line-height: 1.5;
-            color: var(--Grayish-Blue)
+            color: var(--Grayish-Blue);
         }
         &_btn {
             align-self: center;
@@ -57,7 +58,12 @@
     }
 }
 
-@media (max-width: 43.75em) {
+@media screen and (max-width: 40em) {
+    .span-2 {
+        color: var(--White);
+    }
+}
+@media screen and (max-width: 43.75em) {
     .nav-bar {
         &_ul {
             display: none;
@@ -74,6 +80,8 @@
    }
 }
 
+
+
 @media (max-width: 37.5em) {
 
     .span {
@@ -85,6 +93,8 @@
         }
     }
 }
+
+
 
 @media (max-width: 28.125em) {
     .btn-display {
