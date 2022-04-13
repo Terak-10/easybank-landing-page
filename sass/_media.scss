@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 75em) {
     .header-box {
         padding: 0 3rem;
     }
@@ -10,13 +10,13 @@
     }
 }
 
-@media (max-width: 947px) {
+@media (max-width: 59.1875em) {
     .span {
         color: var(--White);
     }
 }
 //// TABLET VERSION ////
-@media (max-width: 895px) {                              
+@media (max-width: 55.9375em) {                              
     .span {
         color: #000;
     }
@@ -57,7 +57,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75em) {
     .nav-bar {
         &_ul {
             display: none;
@@ -74,7 +74,7 @@
    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
 
     .span {
         color: var(--White);
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 28.125em) {
     .btn-display {
         display: none;
     }
