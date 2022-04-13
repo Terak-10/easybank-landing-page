@@ -36,7 +36,14 @@ html {
 .nav-bar_link:link, .nav-bar_link:visited {
   text-decoration: none;
   color: var(--Grayish-Blue);
-  font-size: 15px; }
+  font-size: 15px;
+  padding-bottom: 1.3rem;
+  transition: .1s all; }
+
+.nav-bar_link:hover {
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan)) 100% 0; }
 
 .text-box {
   width: 40%;
@@ -150,7 +157,11 @@ html {
   .article-box_h-4 {
     margin-bottom: 1rem;
     font-weight: 300;
-    font-size: clamp(1rem, 5vw, 1.05rem); }
+    font-size: clamp(1rem, 5vw, 1.05rem);
+    transition: .3s all; }
+  .article-box_h-4:hover {
+    color: var(--Lime-Green);
+    cursor: pointer; }
   .article-box_p-2 {
     font-weight: 300;
     color: var(--Grayish-Blue);
@@ -175,7 +186,12 @@ html {
   .box-1_icon-box {
     align-self: flex-end; }
   .box-1_item {
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    position: relative;
+    transition: .5s all; }
+  .box-1_item:hover {
+    cursor: pointer;
+    transform: translateY(0.5rem); }
 
 .box-2 {
   display: grid;
@@ -194,7 +210,11 @@ html {
   .box-2_link:link, .box-2_link:visited {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.663);
-    font-size: clamp(0.7rem, 0.8vw, 1.2rem); }
+    font-size: clamp(0.7rem, 0.8vw, 1.2rem);
+    transition: .3s all; }
+  .box-2_link:hover {
+    color: var(--Lime-Green);
+    cursor: pointer; }
 
 .box-3 {
   display: grid;
@@ -357,7 +377,8 @@ html {
   background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
   color: var(--White);
   font-weight: 700;
-  border: none; }
+  border: none;
+  transition: .3s all; }
 
 .btn:hover {
   cursor: pointer;

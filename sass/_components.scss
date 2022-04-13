@@ -21,6 +21,14 @@
         text-decoration: none;
         color: var(--Grayish-Blue);
         font-size: 15px;
+        padding-bottom: 1.3rem;
+        transition: .1s all;
+    }
+
+    &_link:hover {
+        border-width:  0 0 3px 0;
+        border-style: solid;
+        border-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan)) 100% 0; 
     }
 }
 ///********** HEADER  **********///
@@ -182,6 +190,12 @@
         margin-bottom: 1rem;
         font-weight: 300;
         font-size: clamp(1rem, 5vw, 1.05rem);
+        transition: .3s all;
+    }
+
+    &_h-4:hover {
+        color: var(--Lime-Green);
+        cursor: pointer;
     }
 
     &_p-2 {
@@ -190,7 +204,7 @@
         font-size: clamp(0.2rem, 5vw, 0.85rem);
     }
 }
-
+///********** Footer  **********///
 .footer-box {
     display: grid;
     grid-template-columns: 1fr 1.5fr 2fr;
@@ -219,12 +233,18 @@
     &_icon-box {
         align-self: flex-end;
 
-        
     }
 
     &_item {
         margin-right: 0.5rem;
+        position: relative;
+        transition: .5s all;
     }
+
+   &_item:hover {
+       cursor: pointer;
+       transform: translateY(0.5rem);
+   }
 }
 
 .box-2 {
@@ -247,13 +267,17 @@
     }
     }
 
-    
-
     &_link:link,
     &_link:visited {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.663);
         font-size: clamp(0.7rem, 0.8vw, 1.2rem);
+        transition: .3s all;
+    }
+
+    &_link:hover {
+        color: var(--Lime-Green);
+        cursor: pointer;
     }
 }
 
@@ -278,7 +302,3 @@
         font-size: clamp(0.7rem, 1vw, 1.2rem);
     }
 }
-
-
-/////////////////////////////////// active states
-///////////////////////////////////  Dokončiť + projekt
