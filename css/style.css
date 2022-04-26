@@ -47,7 +47,7 @@ html {
 
 .text-box {
   width: 40%;
-  min-height: 40vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -71,7 +71,8 @@ html {
     line-height: 1.5;
     color: var(--Grayish-Blue);
     animation-name: pulsate2;
-    animation-duration: 5s; }
+    animation-duration: 5s;
+    margin-bottom: 1.5rem; }
 
 @keyframes pulsate2 {
   0% {
@@ -383,6 +384,8 @@ html {
 @media (max-width: 28.125em) {
   .btn-display {
     display: none; }
+  .nav-bar {
+    padding: 0 5vw; }
   .text-box {
     text-align: center; }
     .text-box_h-1 {
